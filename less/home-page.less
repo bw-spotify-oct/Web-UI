@@ -1,0 +1,30 @@
+//main
+
+.main {
+    div {
+        .flexing();
+        @media @tablet {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+        p {
+            padding: 5% 7% 0 0%;
+            @media @tablet {
+                margin: 0 5%;
+            }
+        }
+        img {
+            border-radius: 25% 0% 25% 10%;
+            width: 45%;
+            @media @tablet {
+                width: 90%;
+                margin: 0 5%;
+                border-radius: 10%;
+            }
+        }
+        border-bottom: 2px solid black;
+        padding-bottom: 7%;
+        margin-bottom: 7%;
+        margin-top: 2%;
+    }
+}

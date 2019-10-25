@@ -1,0 +1,47 @@
+.about {
+    border-bottom: 2px solid black;
+}
+
+.about .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media @phone {
+        flex-direction: column;
+    }
+}
+
+.about .boxes .box {
+    width: 26%;
+    margin: 20px 2.5%;
+    @media @tablet {
+        width: 35%;
+    }
+    @media @phone {
+        width: 80%;
+        margin: 3% 10%;
+    }
+    h3 {
+        text-align: center;
+        padding: 5% 0;
+        font-size: 2.3rem;
+    }
+    h4 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    img {
+        width: 100%;
+        border-radius: 10%;
+        margin: 4% 0;
+    }
+    a img {
+        width: 24px;
+    }
+}
+
+.filler {
+    @media @tablet {
+        display: none;
+    }
+}
