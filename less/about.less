@@ -1,47 +1,74 @@
-.about {
-    border-bottom: 2px solid black;
-}
+.upp{
+    font-size:8rem;
+    text-align:center;
+    background: #f4f4f4;;
+    padding:2% 0;
 
-.about .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    @media @phone {
-        flex-direction: column;
+    h2{
+        margin-bottom:1%;
     }
-}
 
-.about .boxes .box {
-    width: 26%;
-    margin: 20px 2.5%;
-    @media @tablet {
-        width: 35%;
-    }
-    @media @phone {
-        width: 80%;
-        margin: 3% 10%;
-    }
-    h3 {
-        text-align: center;
-        padding: 5% 0;
-        font-size: 2.3rem;
-    }
-    h4 {
-        text-align: center;
-        font-size: 1.6rem;
-    }
-    img {
-        width: 100%;
-        border-radius: 10%;
-        margin: 4% 0;
-    }
-    a img {
-        width: 24px;
+    div{
+        font-size:@font;
+
+        h3{
+            font-size:5rem;
+            margin-bottom:2%;
+        }
+
+        p{
+            text-align: left;
+            width:80%;
+            margin:0 auto;
+        }
+
+
     }
 }
 
-.filler {
-    @media @tablet {
-        display: none;
+.ppl{
+    border-top:1px solid black;
+    .flex(space-evenly);
+    font-size:@font;
+    flex-wrap:wrap;
+    background:linear-gradient(to bottom right, #09C22C, #F753D8);
+
+
+    .b{
+        width:30%;
+        padding:2%;
+        margin:2% 0;
+        background:#f4f4f4;
+
+        @media @tablet{
+            width:46%;
+        }
+
+        @media @phone{
+            width:96%;
+        }
+        
+        
+        img{
+            width:100%;
+            border-radius:80px;
+        }
+
+        h2{
+            text-align:center;
+            margin:4% 0;
+            font-size:5rem;
+        }
+
+        h3{
+            text-align:center;
+            font-size:4rem;
+            margin:4% 0;
+        }
+
+        i{
+            margin-top:2%;
+            color:black;
+        }
     }
 }

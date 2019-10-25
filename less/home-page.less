@@ -1,30 +1,97 @@
-//main
+.center {
+  // border:2px solid red;
+  flex-direction: column;
+  width: 100%;
+  background: #f4f4f4;
+  padding: 11% 0 0 0;
 
-.main {
-    div {
-        .flexing();
-        @media @tablet {
-            display: flex;
-            flex-wrap: wrap-reverse;
+  .top {
+    // border:2px solid red;
+    display: flex;
+    width: 90%;
+    margin: 0 auto 12% auto;
+    font-size: 5rem;
+    text-align: center;
+    // border:2px solid blue;
+    background: linear-gradient(to bottom right, #09c22c, #f753d8);
+    .flex(center);
+    flex-direction: column;
+    padding: 5% 0;
+
+    .box {
+      font-size: 5rem;
+      text-align: center;
+      // border:2px solid blue;
+      .flex(center);
+      flex-direction: column;
+      padding: 5% 0;
+
+      @media @tablet {
+        width: 100%;
+        // border:2px solid blue;
+      }
+
+      @media @phone {
+        font-size: @font;
+      }
+
+      h1 {
+        padding: 3% 0;
+        border-bottom: 1px solid black;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: @font;
+
+        @media @phone {
+          font-size: 2rem;
         }
-        p {
-            padding: 5% 7% 0 0%;
-            @media @tablet {
-                margin: 0 5%;
-            }
+      }
+
+      .p {
+        //   border:2px solid green;
+        text-align: left;
+        width: 65%;
+        padding: 6% 0 0 0;
+        margin: 0 auto;
+        //   border-top: 1px solid black;
+      }
+
+      .links {
+        // border:2px solid green;
+        margin: 6% auto;
+        width: 100%;
+        .flex(space-around);
+
+        @media @phone {
+          flex-direction: column;
+          width: 100%;
         }
-        img {
-            border-radius: 25% 0% 25% 10%;
-            width: 45%;
-            @media @tablet {
-                width: 90%;
-                margin: 0 5%;
-                border-radius: 10%;
-            }
+
+        a {
+          color: @color;
+          text-decoration: none;
+          background: green;
+          border-radius: 10px;
+          font-size: 4rem;
+          padding: 1%;
+          width: 45%;
+          text-align: center;
+
+          @media @phone {
+            width: 100%;
+            margin-top: 2%;
+            font-size: @font;
+            padding: 3%;
+          }
+
+          &:hover {
+            color: white;
+          }
         }
-        border-bottom: 2px solid black;
-        padding-bottom: 7%;
-        margin-bottom: 7%;
-        margin-top: 2%;
+      }
     }
+  }
 }
